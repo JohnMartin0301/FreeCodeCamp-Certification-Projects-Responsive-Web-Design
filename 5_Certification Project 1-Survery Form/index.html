@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title"> Software Engineering Survey</h1>
+  <p id="description">Welcome to the Software Engineering Survey! We're eager to learn about the technologies and tools used by software engineers worldwide. Your insights help shape the future of software engineering!</p>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label"><b>Name:</b> <input id="name" type="text" placeholder="Full Name" required /></label>
+      <label for="email" id="email-label"><b>Email:</b> <input id="email" type="email" placeholder="example@mail.com" required /></label>
+      <label for="age" id="number-label"><b>Age:</b> <input id="number" type="number" min="20" max="120" placeholder="20"/></label>
+      <label for="years-of-experience" id="number-label"><b>Years of Experience:</b> <input id="number" type="number" min="1" max="100" placeholder="1 year"/></label>
+    </fieldset>
+    <fieldset>
+      <label for="language"><b>Preferred Programming Language:</b></label>
+      <select id="dropdown" name="language" required>
+        <option value="">Select One</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="C">C</option>
+        <option value="C#">C#</option>
+        <option value="C++">C++</option>
+        <option value="Go">Go</option>
+        <option value="Ruby">Ruby</option>
+        <option value="Swift">Swift</option>
+        <option value="Other">Other</option>
+      </select>
+      <label id="education"><b>Education:</b> </label>
+      <input id="com-sci" value="com-sci" type="radio" name="education" class="inline" checked>Computer Science<br>
+      <input id="com-eng" value="com-eng" type="radio" name="education" class="inline" >Computer Engineering<br>
+      <input id="IT" value="IT" type="radio" name="education" class="inline" >Information Technology<br>
+      <input id="self-taught" value="self-taught" type="radio" name="education" class="inline" >Self-Taught<br>
+      <input id="other" value="other" type="radio" name="education" class="inline" >Other<br>
+      <label for="os" id="os">Preferred Operating System: </label>
+      <input type="checkbox" name="windows" value="os1">Windows<br>
+      <input type="checkbox" name="mac" value="os2">MacOS<br>
+      <input type="checkbox" name="linux" value="os3">Linux<br>
+      <label for="framework" id="framework"><b>Preferred Framework:</b> </label>
+      <select id="dropdown" name="framework" required>
+        <option value="">Select One</option>
+        <option value="react">React</option>
+        <option value="angular">Angular</option>
+        <option value="vue">Vue</option>
+        <option value="flask">Flask</option>
+        <option value="django">Django</option>
+        <option value="express">Express</option>
+        <option value="jquery">jQuery</option>
+        <option value="svelte">Svelte</option>
+        <option value="bootstrap">Bootstrap</option>
+        <option value="Other">Other</option>
+      </select>
+      <label for="suggestions" id="suggestions"><b>Any suggestions for improvement:</b> </label>
+      <textarea id="suggestions" name="suggestions" rows="3" cols="30" placeholder="e.g Simplify code deployment process."></textarea>
+    </fieldset>
+    <input id="submit" type="submit"  class="form">
+  </form>
+</body>
+</html>
